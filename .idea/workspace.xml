@@ -29,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -146,10 +147,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="283" y="0" key="#com.aeropuerto.undec_in_aeropuerto/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589630965831" />
-    <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1589726852824">
+    <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1589750806666">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589726852824" />
+    <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589750806666" />
     <state x="283" y="0" key="#vuelos" timestamp="1589741736235">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

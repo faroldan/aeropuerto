@@ -9,4 +9,8 @@ public class VuelosException extends Exception {
         super("\nLos atributos no pueden ser nulos");
     }
 
+    public VuelosException(String msg) {
+        super("\n"+msg);
+    }
+
 }
