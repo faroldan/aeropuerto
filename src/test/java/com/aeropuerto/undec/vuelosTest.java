@@ -1,12 +1,16 @@
 package com.aeropuerto.undec;
 
+import exceptions.PilotoException;
 import logica.GestorVuelo;
 import model.Piloto;
 import model.Vuelo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.AssertEquals.assertEquals;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+//import static org.junit.jupiter.api.AssertEquals.assertEquals;
 
 /*funcionalidades a testear
 19.	Cargar nuevos vuelos
@@ -20,14 +24,15 @@ import static org.junit.jupiter.api.AssertEquals.assertEquals;
 * */
 public class vuelosTest {
     @Test
-    public void gestorVuelos(){
+    public void gestorVuelos() throws PilotoException {
         // arrange
-        Piloto p1= new Piloto();
-        Piloto p2= new Piloto();
+        SimpleDateFormat sdf= new SimpleDateFormat("dd/mm/yyyy");
+        //Piloto p1= new Piloto("20-31739902-4", "Roldan","Fabian", sdf.format("12/01/1986"));
+        //Piloto p2= new Piloto("20-31739902-4", "Roldan","Fabian", sdf.format("12/01/1986"));
         GestorVuelo gv = GestorVuelo.getInstance();
-        Vuelo gv = new Vuelo("AR 1234", "","","","","",
-                "","");
-        Vuelo gv1 = new Vuelo();
+        GestorVuelo gv1 = GestorVuelo.getInstance();
+       // Vuelo v = new Vuelo("AR 1234", ,"","","","", "","");
+        //Vuelo v1 = new Vuelo();
 
         // assert
         Assertions.assertEquals(true, gv.equals(gv1));

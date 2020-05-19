@@ -28,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,6 +48,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="logica" />
+      <recent name="exceptions" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.avionTest">
     <configuration name="avionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -147,10 +153,15 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="283" y="0" key="#com.aeropuerto.undec_in_aeropuerto/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589630965831" />
-    <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1589750806666">
+    <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1589888112186">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589750806666" />
+    <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser/1360.0.1366.728/2726.-319.1280.680/0.0.1360.728@0.0.1360.728" timestamp="1589888112186" />
+    <state x="410" y="139" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1589886926111">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="410" y="139" key="#com.intellij.ide.util.PackageChooserDialog/1360.0.1366.728/2726.-319.1280.680/0.0.1360.728@0.0.1360.728" timestamp="1589886926111" />
     <state x="283" y="0" key="#vuelos" timestamp="1589741736235">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

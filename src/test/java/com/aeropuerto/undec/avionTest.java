@@ -26,20 +26,8 @@ public class avionTest {
     }
     @Test
     public void cargarAvion(){
-        // arrange
-        GestorAvion ga = GestorAvion.getInstance();
-        Avion a1 = new Avion("LV-AFD", "Airbus A340",150,1980);
-        Avion a2 = new Avion();
 
 
-        // actual
-        gv.addProducto(z1);
-        gv.addProducto(z2);
-
-
-        // assert
-        Assertions.assertEquals(1, v1.BuscarProducto(1));
-        Assertions.assertEquals(2, v1.BuscarProducto(2));
     }
     @Test
     public void modificarAvion(){
