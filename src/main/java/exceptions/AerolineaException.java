@@ -2,7 +2,7 @@ package exceptions;
 
 public class AerolineaException extends Throwable {
     public AerolineaException() {
-        super("\nLos atributos no pueden ser nulos");
+        super("\nSe detectó una excepción no tratada");
     }
 
     public AerolineaException(String msg) {

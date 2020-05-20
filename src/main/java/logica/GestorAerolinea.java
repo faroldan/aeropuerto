@@ -28,7 +28,7 @@ public class GestorAerolinea {
     }
 
     public boolean AgregarAerolinea(Aerolinea data){
-        if (!data.equals(null)){
+        if (data != null){
                  aerolineas.add(data);
                     return true;}
         else
@@ -51,11 +51,12 @@ public class GestorAerolinea {
 
                 return aerolineas.remove(mod);
     }
-    //criterio de busqueda: CUIT y/o nombre
+    //criterio de busqueda: nombre
     public Aerolinea TraerUnaAerolinea(String filtro) {
         for (Aerolinea a: aerolineas){
-            if(a.getCuit()==filtro || a.getNombre()==filtro)
+            if(a.getNombre().contains(filtro)){
                     return a;
+            }
         }
         return null;
     }

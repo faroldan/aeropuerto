@@ -59,10 +59,7 @@ public class aerolineaTest {
                 fecha =sdf.parse("1982-01-20");
                 assertEquals(true,ga.ModificarAerolinea(ga.TraerUnaAerolinea("Austral"),"30-54738823-3","AR","Austral",fecha));
 
-                /*assertEquals(false, ga.TraerUnaAerolinea("Austral").getCuit());
-                assertEquals("AR", ga.TraerUnaAerolinea("Austral").getCodIATA());
-                assertEquals("Austral", ga.TraerUnaAerolinea("Austral").getNombre());
-                assertEquals(false, ga.TraerUnaAerolinea("Austral").getFechaInicioAct());*/
+
         }
 
         @Test
@@ -74,6 +71,6 @@ public class aerolineaTest {
                 Aerolinea a = new Aerolinea("30-43728472-3", "AR","Austral",fecha);
                 ga.AgregarAerolinea(a);
 
-               assertEquals(null,ga.TraerUnaAerolinea("Austral"));
+               assertEquals(a,ga.TraerUnaAerolinea("Austral"));
         }
 }
