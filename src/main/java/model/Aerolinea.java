@@ -1,9 +1,9 @@
 package model;
 
 import exceptions.AerolineaException;
-import exceptions.PilotoException;
 
-import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -12,9 +12,9 @@ public class Aerolinea extends AerolineaException {
     private String cuit;
     private String CodIATA;
     private String nombre;
-    private Date fechaInicioAct;
+    private SimpleDateFormat fechaInicioAct;
 
-    public Aerolinea(String cuit, String codIATA, String nombre, Date fechaInicioAct) throws AerolineaException {
+    public Aerolinea(String cuit, String codIATA, String nombre, SimpleDateFormat fechaInicioAct) throws AerolineaException {
         Pattern p = Pattern.compile("[[0-0]{2}-[0-9]{8}-[0-9]{1}]");
         Matcher m;
         if (!cuit.equals(null) && !CodIATA.equals(null) && !nombre.equals(null) && !fechaInicioAct.equals(null)) {
@@ -43,7 +43,23 @@ public class Aerolinea extends AerolineaException {
         this.nombre = nombre;
     }
 
-    public void setFechaInicioAct(Date fechaInicioAct) {
+    public void setFechaInicioAct(SimpleDateFormat fechaInicioAct) {
         this.fechaInicioAct = fechaInicioAct;
+    }
+
+    public String getCuit() {
+        return cuit;
+    }
+
+    public String getCodIATA() {
+        return CodIATA;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public SimpleDateFormat getFechaInicioAct() {
+        return fechaInicioAct;
     }
 }

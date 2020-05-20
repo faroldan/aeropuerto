@@ -1,13 +1,15 @@
 package logica;
 
+import com.sun.jmx.remote.internal.ArrayQueue;
 import exceptions.AerolineaException;
 import model.Aerolinea;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 public class GestorAerolinea {
     List<Aerolinea> aerolineas= new ArrayList<Aerolinea>();
@@ -33,7 +35,7 @@ public class GestorAerolinea {
             return false;
     }
 
-    public boolean ModificarAerolinea(Aerolinea mod, String cuit, String CodIATA, String nombre, Date fechaInicioAct){
+    public boolean ModificarAerolinea(Aerolinea mod, String cuit, String CodIATA, String nombre, SimpleDateFormat fechaInicioAct){
         for (Aerolinea a: aerolineas){
             if (a.equals(mod)){
                     a.setCuit(cuit);
@@ -46,27 +48,28 @@ public class GestorAerolinea {
         return false;
     }
     public boolean BorrarAerolinea(Aerolinea mod){
-        for (Aerolinea a: aerolineas) {
-            if (a.equals(mod)){
-                aerolineas.remove(mod);
-                return true;
-            }
-        }
-        return false;
-    }
-    public Aerolinea TraerUnaAerolinea(String filtro){
-        for (Aerolinea a: aerolineas){
-            
-        }
 
-        return a;
+                return aerolineas.remove(mod);
+    }
+    //criterio de busqueda: CUIT y/o nombre
+    public Aerolinea TraerUnaAerolinea(String filtro) {
+        for (Aerolinea a: aerolineas){
+            if(a.getCuit().equals(filtro) || a.getNombre().equals(filtro))
+                    return a;
+        }
+        return null;
     }
     public List<Aerolinea> TraerTodasAerolinea(){
 
         return aerolineas;
     }
-    public Aerolinea TraerPorCriterioAerolinea(String filtro){
-        Aerolinea a;
-        return a;
+    //busca por parte del Nombre
+    public List<Aerolinea> TraerPorCriterioAerolinea(String filtro){
+        List<Aerolinea> ret= new ArrayList<Aerolinea>();
+        for (Aerolinea a: aerolineas){
+            if(a.getNombre().contains(filtro))
+                 ret.add(a);
+        }
+        return ret;
     }
 }

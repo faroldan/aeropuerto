@@ -17,7 +17,7 @@ public class aeropuertoTest {
     }
 
     @Test
-    public void cambiarAeropuerto() {
+    public void modificarAeropuerto() {
     }
 
     @Test
