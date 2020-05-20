@@ -5,7 +5,7 @@ import exceptions.AvionException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Avion {
+public class Avion extends AvionException{
     private String matricula;
     private String modelo;
     private int capacidad;

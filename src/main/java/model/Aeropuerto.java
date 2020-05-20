@@ -6,25 +6,25 @@ import exceptions.AvionException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Aeropuerto {
+public class Aeropuerto extends AeropuertoException{
     private String CodIATA;
     private String nombre;
     private String ciudad;
     private String CP;
     Pattern p=Pattern.compile("[[A-Z]{3}]");
     Matcher m;
-    public Aeropuerto(String codIATA, String nombre, String ciudad, String CP) throws AeropuertoException{
+    public Aeropuerto(String pcodIATA, String pnombre, String pciudad, String pCP) throws AeropuertoException{
 
-        if (!CodIATA.equals(null) && !nombre.equals(null) && !ciudad.equals(null) && !CP.equals(null)){
-            m=p.matcher(CodIATA);
+        if (pcodIATA!=null && pnombre!=null && pciudad!=null&& pCP!=null){
+            m=p.matcher(pcodIATA);
             if (m.find()) {
-                CodIATA = CodIATA;
+                CodIATA = pcodIATA;
             }else{
                 throw new AeropuertoException("El codigo IATA no posee el formato correcto");
             }
-            this.nombre = nombre;
-            this.ciudad = ciudad;
-            this.CP = CP;
+            this.nombre = pnombre;
+            this.ciudad = pciudad;
+            this.CP = pCP;
         }
         else {throw new AeropuertoException();}
     }
@@ -33,10 +33,10 @@ public class Aeropuerto {
         return CodIATA;
     }
 
-    public void setCodIATA(String codIATA)throws AeropuertoException {
-        m=p.matcher(CodIATA);
+    public void setCodIATA(String pcodIATA)throws AeropuertoException {
+        m=p.matcher(pcodIATA);
         if (m.find()) {
-            CodIATA = CodIATA;
+            CodIATA = pcodIATA;
         }else{
             throw new AeropuertoException("El codigo IATA no posee el formato correcto");
         }
@@ -47,23 +47,23 @@ public class Aeropuerto {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String pnombre) {
+        this.nombre = pnombre;
     }
 
     public String getCiudad() {
         return ciudad;
     }
 
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
+    public void setCiudad(String pciudad) {
+        this.ciudad = pciudad;
     }
 
     public String getCP() {
         return CP;
     }
 
-    public void setCP(String CP) {
-        this.CP = CP;
+    public void setCP(String pCP) {
+        this.CP = pCP;
     }
 }

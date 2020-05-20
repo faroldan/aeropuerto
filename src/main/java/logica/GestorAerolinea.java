@@ -12,7 +12,7 @@ import java.util.List;
 
 
 public class GestorAerolinea {
-    List<Aerolinea> aerolineas= new ArrayList<Aerolinea>();
+    List<Aerolinea> aerolineas = new ArrayList<Aerolinea>();
     static private GestorAerolinea ga;
 
     private GestorAerolinea(ArrayList<Aerolinea> arrayList) {
@@ -27,13 +27,17 @@ public class GestorAerolinea {
 
     }
 
-    public boolean AgregarAerolinea(Aerolinea data){
-        if (data != null){
-                 aerolineas.add(data);
-                    return true;}
-        else
+    public boolean AgregarAerolinea(Aerolinea data) {
+        if (data != null) {
+            if (!aerolineas.contains(data)) {
+                aerolineas.add(data);
+                return true;
+            }else return false;
+        } else
             return false;
     }
+
+
 
     public boolean ModificarAerolinea(Aerolinea mod, String cuit, String CodIATA, String nombre, Date fechaInicioAct){
         for (Aerolinea a: aerolineas){
