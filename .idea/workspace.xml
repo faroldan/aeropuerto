@@ -71,6 +71,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="aerolineaTest.ModificarAerolinea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aeropuerto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aeropuerto.undec.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.aeropuerto.undec" />
+      <option name="MAIN_CLASS_NAME" value="com.aeropuerto.undec.aerolineaTest" />
+      <option name="METHOD_NAME" value="ModificarAerolinea" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aerolineaTest.cargarAerolinea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aeropuerto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aeropuerto.undec.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.aeropuerto.undec" />
+      <option name="MAIN_CLASS_NAME" value="com.aeropuerto.undec.aerolineaTest" />
+      <option name="METHOD_NAME" value="cargarAerolinea" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="avionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aeropuerto" />
       <extension name="coverage">
@@ -107,6 +139,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.aerolineaTest" />
+        <item itemvalue="JUnit.aerolineaTest.cargarAerolinea" />
+        <item itemvalue="JUnit.aerolineaTest.ModificarAerolinea" />
         <item itemvalue="JUnit.avionTest" />
       </list>
     </recent_temporary>
@@ -145,9 +179,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="306" y="42" key="#Inspections/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589931933502" />
-    <state x="272" y="0" width="816" height="728" key="#Intentions" timestamp="1589631120827">
+    <state x="272" y="0" width="816" height="728" key="#Intentions" timestamp="1589986297932">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
+    <state x="272" y="0" key="#Intentions/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589986297932" />
     <state x="272" y="0" width="816" height="728" key="#Intentions/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589631120827" />
     <state x="288" y="159" width="734" height="433" key="#Notifications" timestamp="1588871238741">
       <screen x="0" y="0" width="1366" height="728" />
@@ -173,6 +208,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="283" y="0" key="#com.aeropuerto.undec_in_aeropuerto/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589630965831" />
+    <state x="92" y="92" width="1176" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1589985612310">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="92" y="92" width="1176" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589985612310" />
     <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1589942786144">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -195,25 +234,56 @@
     </state>
     <state x="283" y="0" key="#vuelosTest.gestorVuelos/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589726283539" />
     <state x="283" y="0" key="#vuelosTest/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589741696765" />
-    <state width="1317" height="179" key="GridCell.Tab.0.bottom" timestamp="1589943990281">
+    <state width="1317" height="150" key="GridCell.Tab.0.bottom" timestamp="1589986066743">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.bottom/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589943990281" />
-    <state width="1317" height="179" key="GridCell.Tab.0.center" timestamp="1589943990281">
+    <state width="1317" height="150" key="GridCell.Tab.0.bottom/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589986066743" />
+    <state width="1317" height="150" key="GridCell.Tab.0.center" timestamp="1589986066743">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.center/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589943990281" />
-    <state width="1317" height="179" key="GridCell.Tab.0.left" timestamp="1589943990279">
+    <state width="1317" height="150" key="GridCell.Tab.0.center/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589986066743" />
+    <state width="1317" height="150" key="GridCell.Tab.0.left" timestamp="1589986066743">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.left/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589943990279" />
-    <state width="1317" height="179" key="GridCell.Tab.0.right" timestamp="1589943990281">
+    <state width="1317" height="150" key="GridCell.Tab.0.left/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589986066743" />
+    <state width="1317" height="150" key="GridCell.Tab.0.right" timestamp="1589986066743">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.right/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589943990281" />
+    <state width="1317" height="150" key="GridCell.Tab.0.right/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589986066743" />
+    <state width="1317" height="150" key="GridCell.Tab.1.bottom" timestamp="1589986066744">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="150" key="GridCell.Tab.1.bottom/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589986066744" />
+    <state width="1317" height="150" key="GridCell.Tab.1.center" timestamp="1589986066743">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="150" key="GridCell.Tab.1.center/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589986066743" />
+    <state width="1317" height="150" key="GridCell.Tab.1.left" timestamp="1589986066743">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="150" key="GridCell.Tab.1.left/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589986066743" />
+    <state width="1317" height="150" key="GridCell.Tab.1.right" timestamp="1589986066744">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="150" key="GridCell.Tab.1.right/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589986066744" />
+    <state width="688" height="372" key="XDebugger.FullValuePopup" timestamp="1589985998428">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="688" height="372" key="XDebugger.FullValuePopup/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589985998428" />
     <state x="62" y="24" key="new project wizard" timestamp="1589629467126">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="62" y="24" key="new project wizard/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589629467126" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/aeropuerto/undec/aerolineaTest.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

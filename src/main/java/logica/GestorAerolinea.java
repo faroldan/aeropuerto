@@ -35,9 +35,9 @@ public class GestorAerolinea {
             return false;
     }
 
-    public boolean ModificarAerolinea(Aerolinea mod, String cuit, String CodIATA, String nombre, SimpleDateFormat fechaInicioAct){
+    public boolean ModificarAerolinea(Aerolinea mod, String cuit, String CodIATA, String nombre, Date fechaInicioAct){
         for (Aerolinea a: aerolineas){
-            if (a.equals(mod)){
+            if (a == mod){
                     a.setCuit(cuit);
                     a.setCodIATA(CodIATA);
                     a.setNombre(nombre);
@@ -54,7 +54,7 @@ public class GestorAerolinea {
     //criterio de busqueda: CUIT y/o nombre
     public Aerolinea TraerUnaAerolinea(String filtro) {
         for (Aerolinea a: aerolineas){
-            if(a.getCuit().equals(filtro) || a.getNombre().equals(filtro))
+            if(a.getCuit()==filtro || a.getNombre()==filtro)
                     return a;
         }
         return null;
