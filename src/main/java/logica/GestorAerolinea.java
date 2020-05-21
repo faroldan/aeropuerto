@@ -3,6 +3,7 @@ package logica;
 import com.sun.jmx.remote.internal.ArrayQueue;
 import exceptions.AerolineaException;
 import model.Aerolinea;
+import model.Avion;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -28,13 +29,21 @@ public class GestorAerolinea {
     }
 
     public boolean AgregarAerolinea(Aerolinea data) {
-        if (data != null) {
-            if (!aerolineas.contains(data)) {
-                aerolineas.add(data);
-                return true;
-            }else return false;
-        } else
+        if (aerolineas.size() == 0){
+            aerolineas.add(data);
+            return true;
+        }
+        else {
+            for (Aerolinea control : aerolineas) {
+                if (control.getCodIATA()!= data.getCodIATA()) {
+                    aerolineas.add(data);
+                    return true;
+                } else
+                    return false;
+            }
             return false;
+        }
+
     }
 
 
@@ -58,9 +67,8 @@ public class GestorAerolinea {
     //criterio de busqueda: nombre
     public Aerolinea TraerUnaAerolinea(String filtro) {
         for (Aerolinea a: aerolineas){
-            if(a.getNombre().contains(filtro)){
+            if(a.getNombre()==filtro)
                     return a;
-            }
         }
         return null;
     }

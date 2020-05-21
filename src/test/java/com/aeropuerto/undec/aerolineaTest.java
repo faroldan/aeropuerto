@@ -27,7 +27,7 @@ public class aerolineaTest {
                 GestorAerolinea ga1 = GestorAerolinea.getInstance();
                 // actual
                 // assert
-                assertEquals(true, ga.equals(ga1));
+                assertEquals(true, ga==ga1);
         }
 
         @Test
@@ -71,6 +71,6 @@ public class aerolineaTest {
                 Aerolinea a = new Aerolinea("30-43728472-3", "AR","Austral",fecha);
                 ga.AgregarAerolinea(a);
 
-               assertEquals(a,ga.TraerUnaAerolinea("Austral"));
+               assertEquals("30-43728472-3",ga.TraerUnaAerolinea("Austral").getCuit());
         }
 }

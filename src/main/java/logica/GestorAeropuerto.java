@@ -1,11 +1,9 @@
 package logica;
 
 import exceptions.AeropuertoException;
-import model.Aerolinea;
 import model.Aeropuerto;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class GestorAeropuerto {
@@ -43,7 +41,7 @@ public class GestorAeropuerto {
     }
     public boolean ModificarAeropuerto(Aeropuerto mod, String CodIATA, String nombre, String ciudad, String cp) throws AeropuertoException {
         for (Aeropuerto a: aeropuertos){
-            if (a == mod){
+            if (a.getCodIATA() == mod.getCodIATA()){
 
                 a.setCodIATA(CodIATA);
                 a.setNombre(nombre);
@@ -54,9 +52,12 @@ public class GestorAeropuerto {
         }
         return false;
     }
-    public boolean BorrarAeropuerto(Aeropuerto mod){
-
-        return aeropuertos.remove(mod);
+    public boolean BorrarAeropuerto(Aeropuerto mod) {
+        for (Aeropuerto a : aeropuertos) {
+            if(a.getCodIATA() == mod.getCodIATA())
+                return aeropuertos.remove(mod);
+        }
+        return false;
     }
     //criterio de busqueda: nombre
     public Aeropuerto TraerUnAeropuerto(String filtro) {

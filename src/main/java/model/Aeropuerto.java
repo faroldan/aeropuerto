@@ -11,8 +11,8 @@ public class Aeropuerto extends AeropuertoException{
     private String nombre;
     private String ciudad;
     private String CP;
-    Pattern p=Pattern.compile("[[A-Z]{3}]");
-    Matcher m;
+    private static Pattern p=Pattern.compile("[[A-Z]{3}]");
+    private Matcher m;
     public Aeropuerto(String pcodIATA, String pnombre, String pciudad, String pCP) throws AeropuertoException{
 
         if (pcodIATA!=null && pnombre!=null && pciudad!=null&& pCP!=null){

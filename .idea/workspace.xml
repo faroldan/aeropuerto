@@ -56,8 +56,16 @@
       <recent name="logica" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.aeropuertoTest">
-    <configuration name="aerolineaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in aeropuerto">
+    <configuration name="All in aeropuerto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aeropuerto" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="avionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aeropuerto" />
       <extension name="coverage">
         <pattern>
@@ -66,13 +74,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.aeropuerto.undec" />
-      <option name="MAIN_CLASS_NAME" value="com.aeropuerto.undec.aerolineaTest" />
+      <option name="MAIN_CLASS_NAME" value="com.aeropuerto.undec.avionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="aerolineaTest.BuscarAerolineaPorNombre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="avionTest.consultarAviones" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aeropuerto" />
       <extension name="coverage">
         <pattern>
@@ -81,14 +89,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.aeropuerto.undec" />
-      <option name="MAIN_CLASS_NAME" value="com.aeropuerto.undec.aerolineaTest" />
-      <option name="METHOD_NAME" value="BuscarAerolineaPorNombre" />
+      <option name="MAIN_CLASS_NAME" value="com.aeropuerto.undec.avionTest" />
+      <option name="METHOD_NAME" value="consultarAviones" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="aerolineaTest.cargarAerolinea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="pilotoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aeropuerto" />
       <extension name="coverage">
         <pattern>
@@ -97,29 +105,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.aeropuerto.undec" />
-      <option name="MAIN_CLASS_NAME" value="com.aeropuerto.undec.aerolineaTest" />
-      <option name="METHOD_NAME" value="cargarAerolinea" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="aeropuertoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aeropuerto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.aeropuerto.undec.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.aeropuerto.undec" />
-      <option name="MAIN_CLASS_NAME" value="com.aeropuerto.undec.aeropuertoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.aeropuerto.undec.pilotoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="aeropuertoTest.cargarAeropuerto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="pilotoTest.consultarPilotos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aeropuerto" />
       <extension name="coverage">
         <pattern>
@@ -128,8 +120,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.aeropuerto.undec" />
-      <option name="MAIN_CLASS_NAME" value="com.aeropuerto.undec.aeropuertoTest" />
-      <option name="METHOD_NAME" value="cargarAeropuerto" />
+      <option name="MAIN_CLASS_NAME" value="com.aeropuerto.undec.pilotoTest" />
+      <option name="METHOD_NAME" value="consultarPilotos" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.aeropuertoTest" />
-        <item itemvalue="JUnit.aeropuertoTest.cargarAeropuerto" />
-        <item itemvalue="JUnit.aerolineaTest.BuscarAerolineaPorNombre" />
-        <item itemvalue="JUnit.aerolineaTest" />
-        <item itemvalue="JUnit.aerolineaTest.cargarAerolinea" />
+        <item itemvalue="JUnit.All in aeropuerto" />
+        <item itemvalue="JUnit.avionTest" />
+        <item itemvalue="JUnit.avionTest.consultarAviones" />
+        <item itemvalue="JUnit.pilotoTest.consultarPilotos" />
+        <item itemvalue="JUnit.pilotoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -226,14 +218,14 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="283" y="0" key="#com.aeropuerto.undec_in_aeropuerto/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589630965831" />
-    <state x="92" y="92" width="1176" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1590012114472">
+    <state x="92" y="92" width="1176" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1590023152059">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="92" y="92" width="1176" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1590012114472" />
-    <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1589942786144">
+    <state x="92" y="92" width="1176" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1590023152059" />
+    <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1590021345131">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1589942786144" />
+    <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1590021345131" />
     <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589750806666" />
     <state x="485" y="79" key="#com.intellij.ide.util.MemberChooser/1360.0.1366.728/2726.-319.1280.680/0.0.1360.728@0.0.1360.728" timestamp="1589888867911" />
     <state x="410" y="139" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1589886926111">
@@ -252,22 +244,22 @@
     </state>
     <state x="283" y="0" key="#vuelosTest.gestorVuelos/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589726283539" />
     <state x="283" y="0" key="#vuelosTest/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589741696765" />
-    <state width="1317" height="149" key="GridCell.Tab.0.bottom" timestamp="1590012720979">
+    <state width="1317" height="161" key="GridCell.Tab.0.bottom" timestamp="1590022870625">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="149" key="GridCell.Tab.0.bottom/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1590012720979" />
-    <state width="1317" height="149" key="GridCell.Tab.0.center" timestamp="1590012720978">
+    <state width="1317" height="161" key="GridCell.Tab.0.bottom/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1590022870625" />
+    <state width="1317" height="161" key="GridCell.Tab.0.center" timestamp="1590022870625">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="149" key="GridCell.Tab.0.center/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1590012720978" />
-    <state width="1317" height="149" key="GridCell.Tab.0.left" timestamp="1590012720978">
+    <state width="1317" height="161" key="GridCell.Tab.0.center/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1590022870625" />
+    <state width="1317" height="161" key="GridCell.Tab.0.left" timestamp="1590022870625">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="149" key="GridCell.Tab.0.left/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1590012720978" />
-    <state width="1317" height="149" key="GridCell.Tab.0.right" timestamp="1590012720979">
+    <state width="1317" height="161" key="GridCell.Tab.0.left/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1590022870625" />
+    <state width="1317" height="161" key="GridCell.Tab.0.right" timestamp="1590022870625">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="149" key="GridCell.Tab.0.right/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1590012720979" />
+    <state width="1317" height="161" key="GridCell.Tab.0.right/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1590022870625" />
     <state width="1317" height="150" key="GridCell.Tab.1.bottom" timestamp="1590011155575">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -292,5 +284,9 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="62" y="24" key="new project wizard/1360.0.1366.728/0.0.1360.728@0.0.1360.728" timestamp="1589629467126" />
+    <state x="475" y="111" key="refactoring.ChangeSignatureDialog" timestamp="1590021258801">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="475" y="111" key="refactoring.ChangeSignatureDialog/1360.0.1366.728/0.0.1360.728/2726.-319.1280.680@0.0.1360.728" timestamp="1590021258801" />
   </component>
 </project>
