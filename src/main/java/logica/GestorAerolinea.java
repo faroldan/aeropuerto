@@ -1,13 +1,9 @@
 package logica;
 
-import com.sun.jmx.remote.internal.ArrayQueue;
+
 import exceptions.AerolineaException;
 import model.Aerolinea;
-import model.Avion;
-
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 

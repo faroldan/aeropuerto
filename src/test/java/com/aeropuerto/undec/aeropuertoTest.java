@@ -1,14 +1,8 @@
 package com.aeropuerto.undec;
 import exceptions.AeropuertoException;
-import logica.GestorAerolinea;
 import logica.GestorAeropuerto;
-import model.Aerolinea;
 import model.Aeropuerto;
 import org.junit.jupiter.api.Test;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -25,7 +19,7 @@ public class aeropuertoTest {
         GestorAeropuerto ga1 = GestorAeropuerto.getInstance();
         // actual
         // assert
-        assertEquals(true, ga.equals(ga1));
+        assertEquals(true, ga==ga1);
     }
 
     @Test

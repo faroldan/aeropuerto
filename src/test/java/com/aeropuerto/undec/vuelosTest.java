@@ -27,16 +27,12 @@ public class vuelosTest {
     public void gestorVuelos() throws PilotoException {
         // arrange
         SimpleDateFormat sdf= new SimpleDateFormat("dd/mm/yyyy");
-        //Piloto p1= new Piloto("20-31739902-4", "Roldan","Fabian", sdf.format("12/01/1986"));
-        //Piloto p2= new Piloto("20-31739902-4", "Roldan","Fabian", sdf.format("12/01/1986"));
+
         GestorVuelo gv = GestorVuelo.getInstance();
         GestorVuelo gv1 = GestorVuelo.getInstance();
-       // Vuelo v = new Vuelo("AR 1234", ,"","","","", "","");
-        //Vuelo v1 = new Vuelo();
 
         // assert
-        Assertions.assertEquals(true, gv.equals(gv1));
-        Assertions.assertEquals(true, gv=gv1);
+        Assertions.assertEquals(true, gv==gv1);
 
     }
     @Test
